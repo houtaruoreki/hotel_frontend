@@ -1,0 +1,100 @@
+{
+    "greetingHome": "Welcome to our guest house",
+    "pHome": "In the middle of the quiet beauty of Chokhatauri, in the beautiful village of Chkhakoura, ours",
+    "brHome": "The guest house offers a peaceful rest",
+    "Navigation": {
+        "main": "Main",
+        "aboutUs": "About Us",
+        "rooms": "Rooms",
+        "reservation": "Reservation",
+        "service": "Service",
+        "gallery": "Gallery",
+        "contactUs": "Contact"
+    },
+    "Slider": {
+        "welcome": "Welcome!",
+        "experience": "Experience unforgettable moments and discover your home away from home",
+        "book": "Book a room"
+    },
+    "Footer": {
+        "contactInfo": "Contact Us",
+        "services": "Services",
+        "pages": "who are we"
+    },
+    "Main": {
+        "rooms": "Rooms",
+        "gallery": "Gallery",
+        "gallery_text": "Explore images....",
+        "contact": "Contact Us",
+        "contact_text": "Need help? Contact Us"
+    },
+    "Room": {
+        "room": "Room",
+        "status": "Status",
+        "occupied": "Occupied",
+        "available": "Available",
+        "type": "Type",
+        "detail": "Details",
+        "cottage": "Cottage",
+        "check": "Check",
+        "choose": "Choose Room"
+
+    },
+    "AboutUs":{
+        "history": "Our History",
+        "history_text": "we believe in providing more than just accommodation; we offer an immersive experience that celebrates the rich culture and natural wonders of Georgia's Guria region. Our journey began with a vision to create a haven where guests could escape the hustle and bustle of city life and reconnect with the simplicity and beauty of rural living.",
+        "goal": "Mission and Goals",
+        "goal_text": "we believe in providing more than just accommodation; we offer an immersive experience that celebrates the rich culture and natural wonders of Georgia's Guria region. Our journey began with a vision to create a haven where guests could escape the hustle and bustle of city life and reconnect with the simplicity and beauty of rural living.",
+        "team": "Team",
+        "team_text": "we believe in providing more than just accommodation; we offer an immersive experience that celebrates the rich culture and natural wonders of Georgia's Guria region. Our journey began with a vision to create a haven where guests could escape the hustle and bustle of city life and reconnect with the simplicity and beauty of rural living."
+    },
+     "Contact":{
+        "contact": "Contact",
+        "message": "Contact Us",
+        "name": "Fist and Last name",
+        "inname": "type name",
+        "email": "Email",
+        "inemail": "type email",
+        "comment": "Comment",
+        "incomment": "Type Comment",
+        "choise":{
+            "default" : "Please select one",
+            "service": "Are you setisfied with our service?",
+            "yes" : "yes",
+            "no": "no",
+            "partially": "partially"
+        },
+        "submit": "Submit",
+        "address": "Chokhatauri, Chkhakoura"
+    },
+    "Modal":{
+        "submit": "feedback submitted successfully!",
+        "feedback": "Thank you for feedback."
+    },
+    "Reservation":{
+        "name": "First Name",
+        "iname": "Type name",
+        "lastname": "Last Name",
+        "ilastname": "Type name",
+        "phone": "Phone",
+        "iphone": "Type phone number",
+        "guests": "Guests",
+        "iguests": "choose the number of guests",
+        "out": "Checkout Date",
+        "iout": "select date",
+        "in": "Checkin Date",
+        "iin": "select date",
+        "room": "Room type",
+        "iroom": "select room type",
+        "comment": "Request or Comment",
+        "icomment": "type comment"
+    },
+    "submit": "Book a room",
+    "rooms": "Rooms",
+    "services":{
+        "title": "Services",
+        "view": "beautiful view",
+        "dinner": "Dinner",
+        "cooking": "Cooking masterclass"
+    }
+}
