@@ -45,7 +45,13 @@ const RoomsList = ({ sliceCount }) => {
       {displayRoomsData.map((room) => (
         <div key={room.id} className="flex flex-col items-start p-6 bg-white border border-gray-200 rounded-lg shadow-md transform hover:scale-105 transition-transform duration-300">
           <div className="w-full h-[230px] bg-slate-500 rounded-lg flex justify-center items-center overflow-hidden">
-            <img src={room.images[0].url} alt={`Room ${room.number}`} className="object-cover w-full h-full transition-transform duration-500 hover:scale-110" />
+          {room.images.length > 0 && (  // Check if length is greater than 0
+        <img
+          src={room.images[0].url}
+          alt={`Room ${room.number}`}
+          className="object-cover w-full h-full transition-transform duration-500 hover:scale-110"
+        />
+      )}
           </div>
           <div className="mt-4 flex flex-col items-start">
             <p className="text-lg font-semibold mb-2 text-gray-800">

@@ -3,8 +3,13 @@ import { motion } from "framer-motion";
 import sunIcon from "/Images/sun.png";
 import homeIcon from "/Images/home.png";
 import airIcon from "/Images/air.png";
+import { useTranslation } from "react-i18next";
+
 
 export default function Service() {
+
+  const {t} = useTranslation();
+
   const interiorPhotos = [
     'https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     'https://images.unsplash.com/photo-1525184782196-8e2ded604bf7?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
@@ -29,19 +34,20 @@ export default function Service() {
     >
       {/* Existing content */}
       <div className="flex justify-center items-center flex-col mb-8">
-        <h2 className="text-2xl font-bold mb-4 text-mwvane">სერვისები</h2>
+        <h2 className="text-2xl font-bold mb-4 text-mwvane">{t("Services.title")}</h2>
       </div>
       <div className="max-w-7xl mx-auto">
         <div className="items-left gap-4">
-          <p className="text-2xl font-semibold mt-8 mb-4 text-[#1A202C]">ლამაზი ხედი</p>
+          <p className="text-2xl font-semibold mt-8 mb-4 text-[#1A202C]">{t("Services.view")}</p>
           <p className="text-lg font-helvetica hover:font-helvetica text-[#2D3648] mb-8">
-            ჩოხატაურის შუაგულში მოთავსებული ჩვენი სასტუმრო სახლი გთავაზობთ
+            {/* ჩოხატაურის შუაგულში მოთავსებული ჩვენი სასტუმრო სახლი გთავაზობთ
             დაუვიწყარ დასვენებას თვალწარმტაცი ბუნებრივი სილამაზით
             გარშემორტყმული. დასავლეთით, დიდებული მთები მაღლა დგას, მათი
             მწვერვალები მზის ამოსვლისა და მზის ჩასვლის ოქროსფერი ელფერით
             იცვლებიან, თვალწარმტაცი ფონს ხატავს ცისფერ ცას. აღმოსავლეთით,
             აყვავებული სიმწვანე ფარავს პეიზაჟს, დახვეული ბილიკებით, რომლებიც
-            გიწვევთ ბუნების საოცრებების შესასწავლად.
+            გიწვევთ ბუნების საოცრებების შესასწავლად. */}
+            {t("Services.view-text")}
           </p>
         </div>
        <div style={{display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap:"10px"}}>
@@ -57,12 +63,14 @@ export default function Service() {
             />
        </div>
 
-       <h2 className="text-2xl font-semibold mt-8 mb-4 text-[#1A202C]">საუზმე</h2>
+       <h2 className="text-2xl font-semibold mt-8 mb-4 text-[#1A202C]">{t("Services.dinner")}</h2>
       <p className="text-lg font-helvetica hover:font-helvetica text-[#2D3648] mb-8">
-        როდესაც თქვენ დატკბებით ჩვენს სასტუმრო სახლში შემოთავაზებულ კულინარიულ
+        {/* როდესაც თქვენ დატკბებით ჩვენს სასტუმრო სახლში შემოთავაზებულ კულინარიულ
         სიამოვნებით, მოემზადეთ არა მხოლოდ დახვეწილი გემოებით, არამედ
         თვალწარმტაცი ხედებით, რომლებიც ამაღლებს თქვენს სასადილო გამოცდილებას
-        ახალ სიმაღლეებზე.
+        ახალ სიმაღლეებზე. */}
+
+        {t("Services.dinner-text")}
       </p>
       <div className="overflow-x-auto flex scrollbar no-scrollbar">
         {interiorPhotos.map((photo, index) => (
@@ -75,13 +83,14 @@ export default function Service() {
         ))}
       </div>
 
-      <h2 className="text-2xl font-semibold mt-8 mb-4 text-[#1A202C]">კულინარიული მასტერკლასი</h2>
+      <h2 className="text-2xl font-semibold mt-8 mb-4 text-[#1A202C]">{t("Services.cooking")}</h2>
       <p className="text-lg font-helvetica hover:font-helvetica text-[#2D3648] mb-8">
-        ჩაეფლო დასვენებისა და დასვენების სამყაროში ჩვენს საოჯახო სასტუმროში,
+        {/* ჩაეფლო დასვენებისა და დასვენების სამყაროში ჩვენს საოჯახო სასტუმროში,
         სადაც ჩვენ გთავაზობთ სათამაშო სივრცეს, რათა უზრუნველყოს თქვენი ყოფნის
         ყოველი მომენტი სავსე გართობითა და ხალისით. სამაგიდო თამაშებიდან
         დაწყებული გარე აქტივობებით დამთავრებული, ყველასთვის არის რაღაც
-        სიამოვნება
+        სიამოვნება */}
+        {t("Services.cooking-text")}
       </p>
       <div className="overflow-x-auto flex scrollbar no-scrollbar">
         {eventPhotos.map((photo, index) => (

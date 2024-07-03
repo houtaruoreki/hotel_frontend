@@ -1,8 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 export default function Gallery() {
-  // Define arrays of photo URLs for each section
+  const {t} = useTranslation();
+
   const externalPhotos = [
     "https://images.unsplash.com/uploads/14132599511242aefb264/722944b0?q=80&w=2972&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "https://images.unsplash.com/photo-1416431168657-a6c4184348ab?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -33,17 +35,17 @@ export default function Gallery() {
     >
       <div className="container mx-auto px-4 py-8">
         <h1 className="text-4xl font-bold mb-8 text-center text-mwvane">
-          გალერია
+          {t("Gallery.title")}
         </h1>
         <p className="text-lg mb-8 text-neutralText text-center">
-          შევაბიჯოთ ვიზუალური ბრწყინვალების სამყაროში, როდესაც შეისწავლით
+          {/* შევაბიჯოთ ვიზუალური ბრწყინვალების სამყაროში, როდესაც შეისწავლით
           გალერეას, რომელიც ასახავს ჩვენი სასტუმროს მომხიბვლელ გარემოს. თქვენ
           შეგხვდებათ სურათების გალერეა, რომელიც აღწერს ჩვენი მშვენიერი ადგილის
-          არსს.
+          არსს. */}
         </p>
 
         {/* External views section */}
-        <h2 className="text-2xl font-semibold mb-4">გარე ხედი</h2>
+        <h2 className="text-2xl font-semibold mb-4">{t("Gallery.outside-view")}</h2>
         <div className="border-b-2 border-[#1A202C] mb-10"></div>
         <div className="overflow-x-auto flex no-scrollbar scrollbar">
           {externalPhotos.map((photo, index) => (
@@ -57,7 +59,7 @@ export default function Gallery() {
         </div>
 
         {/* Interior views section */}
-        <h2 className="text-2xl font-semibold mt-8 mb-4">შიდა ხედები</h2>
+        <h2 className="text-2xl font-semibold mt-8 mb-4">{t("Gallery.inside-view")}</h2>
         <div className="border-b-2 border-[#1A202C] mb-10"></div>
         <div className="overflow-x-auto flex scrollbar no-scrollbar">
           {interiorPhotos.map((photo, index) => (

@@ -29,10 +29,15 @@ export default function Header() {
   };
 
   return (
-    <header className="flex items-center px-8 justify-between bg-mwvane w-full">
+    <header className="flex items-center px-8 py-2 justify-between bg-mwvane w-full">
+      <div className="flex flex-row">
       <Link to="/">
-        <img src={Logo} alt="logo" className="w-40 h-20" />
+        <img src={Logo} alt="logo" className="w-20 h-10" />
       </Link>
+      <div className="flex flex-col items-center justify-center">
+      <h1 className="text-white">{t("Header.hotel-name")}</h1> 
+      </div>
+      </div>
       <Navigation
         links={headerLinks}
         activeLink={

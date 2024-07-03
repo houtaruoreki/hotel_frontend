@@ -220,12 +220,7 @@ const ContactUs = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img
-                    src="https://i.insider.com/60a6cf6ef27b4c0019445c12?width=700"
-
-                    alt="Map marker"
-                    className="cursor-pointer"
-                  />
+                  <p>{t("Contact.popup")}</p>
                 </a>
               </Popup>
             </Marker>
