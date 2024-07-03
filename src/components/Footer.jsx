@@ -62,9 +62,9 @@ export default function Footer() {
           <div className="text-center"> {/* Center aligns all content */}
             <h2 className="text-2xl font-bold mb-4">{t("Footer.services")}</h2>
             <ul className="list-none inline-block text-left"> {/* Inline block to center within parent */}
-              <li className="mb-2">Service 1</li>
-              <li className="mb-2">Service 2</li>
-              <li className="mb-2">Service 3</li>
+              <li className="mb-2">{t("Footer.service1")}</li>
+              <li className="mb-2">{t("Footer.service2")}</li>
+              <li className="mb-2">{t("Footer.service3")}</li>
               {/* Add more services as needed */}
             </ul>
           </div>

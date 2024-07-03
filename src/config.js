@@ -1,2 +1,2 @@
-const API_URL = ' https://a46b-95-104-36-132.ngrok-free.app';
+const API_URL = 'https://hotel-backend-2lnk.onrender.com';
 export default API_URL;

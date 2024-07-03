@@ -100,46 +100,8 @@ export default function Home() {
         ))}
       </div>
 
-      <h2 className="text-2xl mt-16 md:mt-24 text-mwvane font-bold">{t("Main.contact")}</h2>
-      <p className="mb-8 text-black text-lg md:text-xl">
-        {t("Main.contact_text")}
-      </p>
-
-        
-      <div className="flex flex-col md:flex-row justify-center gap-4 md:gap-10 mb-10">
-      <div className="mb-10 flex gap-10 ">
-        <div className=" border-mwvane border flex flex-col items-center p-3 shadow-2xl text-black">
-          <MdEmail className="h-10 w-10"/>
-          <div className="flex flex-col gap-6 mt-6">
-            <h1 className="text-black font-bold text-2xl">ელ.ფოსტა</h1>
-            <p className="w-[273px] text-base font-normal">
-              We're here to help you find the perfect outfit.
-            </p>
-          </div>
-          <h1 className="mt-16 underline">guesthouse@gmail.com</h1>
-        </div>
-        <div className=" border-mwvane border flex flex-col items-center p-3 shadow-2xl text-black">
-        <MdLocalPhone className="h-10 w-10"/>
-          <div className="flex flex-col gap-6 mt-6">
-            <h1 className="text-black font-bold text-2xl">ტელეფონი</h1>
-            <p className="w-[273px] text-base font-normal">
-              Connect with us instantly for personalized assistance.
-            </p>
-          </div>
-          <h1 className="mt-16 underline">+995 599 99 99 99</h1>
-        </div>
-        <div className="border-mwvane border flex flex-col items-center p-3 shadow-2xl text-black">
-        <MdLocationPin className="h-10 w-10"/>
-          <div className="mt-6 flex flex-col gap-6">
-            <h1 className="text-black font-bold text-2xl">მდებარეობა</h1>
-            <p className="w-[273px] text-base font-normal">
-              Follow us on social media for fashion inspiration.
-            </p>
-          </div>
-          <h1 className="mt-16 underline">ჩოხატაური, ჩხოკოურა</h1>
-        </div>
-      </div>
-      </div>
+      <div className="h-20"></div>
+      
     </motion.div>
   );
 }
